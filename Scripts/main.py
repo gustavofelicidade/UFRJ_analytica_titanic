@@ -26,3 +26,8 @@ try:
 
 except Exception as e:
     log(f"Error occurred: {str(e)}")
+
+
+log("--------------------------------")
+log("------ titanic_data ----------")
+log(titanic_data.head())
