@@ -31,3 +31,6 @@ except Exception as e:
 log("--------------------------------")
 log("------ titanic_data ----------")
 log(titanic_data.head())
+
+
+
