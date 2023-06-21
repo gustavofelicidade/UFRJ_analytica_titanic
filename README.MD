@@ -3,6 +3,7 @@ Análise do Dataset Titanic
 
 --Tasks--
 
+# In Scripts folder 
 # Use
 # from main import dataset
 # In your script to read the dataset
