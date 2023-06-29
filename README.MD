@@ -5,7 +5,9 @@ Análise do Dataset Titanic
 
 # In Scripts folder 
 # Use
-# from main import dataset
+    import sys
+    sys.path.append('../Scripts')
+    from main import dataset
 # In your script to read the dataset
 
 Tratamento de dados Null
