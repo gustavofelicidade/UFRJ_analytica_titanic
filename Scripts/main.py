@@ -13,9 +13,12 @@ log = logger.info
 
 
 def dataset():
-    gist_url = "https://gist.githubusercontent.com/balmasi/0e65f72c48f2a3498ceb36ffc216f5eb/raw/fa71405126017e6a37bea592440b4bee94bf7b9e/titanic.csv"
-    titanic_data = pd.read_csv(urllib.request.urlopen(gist_url))
-    return titanic_data
+
+    gist_url_train = "https://gist.githubusercontent.com/gustavofelicidade/3894049b7c0f09a9bbed74b402345c4b/raw/513d7e17fc431ff12a1619c2663af328b880b019/train.csv"
+    gist_url_test = "https://gist.githubusercontent.com/gustavofelicidade/3894049b7c0f09a9bbed74b402345c4b/raw/513d7e17fc431ff12a1619c2663af328b880b019/test.csv"
+    train = pd.read_csv(urllib.request.urlopen(gist_url_train))
+    test = pd.read_csv(urllib.request.urlopen(gist_url_test))
+    return train, test
 
 
 # Comment the description below to omit log messages
@@ -23,17 +26,21 @@ if __name__ == "__main__":
 
     try:
         # Read Titanic dataset from Gist URL
-        titanic_data = dataset()
+        train, test = dataset()
 
         # Perform exploratory data analysis
         log("Data Description:")
-        # log(titanic_data.describe())
+        log(train.describe())
+        log(test.describe())
 
         log("Column Information:")
-        # log(titanic_data.info())
+        log(train.info())
+        log(test.info())
 
         log("Null Value Counts:")
-        # log(titanic_data.isnull().sum())
+
+        log(train.isnull().sum())
+        log(test.isnull().sum())
 
     except Exception as e:
         log(f"Error occurred: {str(e)}")

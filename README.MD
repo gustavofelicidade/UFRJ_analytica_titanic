@@ -8,6 +8,8 @@ Análise do Dataset Titanic
     import sys
     sys.path.append('../Scripts')
     from main import dataset
+# Instance variables
+    train, test = dataset()
 # In your script to read the dataset
 
 Tratamento de dados Null
@@ -40,6 +42,9 @@ Geração dos pesos para o Kaggle
 
 
 Gabriel Martins
+
 Gustavo Felicidade
+    gist train test dataset -> ok
+
 Tiago Silva
 
