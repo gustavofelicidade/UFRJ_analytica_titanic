@@ -40,7 +40,6 @@ Teste do Modelo
 Geração dos pesos para o Kaggle
 
 
-
 Gabriel Martins
 
 Gustavo Felicidade
@@ -48,3 +47,9 @@ Gustavo Felicidade
 
 Tiago Silva
 
+
+Para 26/07:
+
+-Pesquisar mais modelos
+-Testar outros imputers
+-Ver os Hyperparametros
