@@ -53,3 +53,4 @@ Para 26/07:
 -Pesquisar mais modelos
 -Testar outros imputers
 -Ver os Hyperparametros
+-Testar Ensembles 
